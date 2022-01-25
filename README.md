@@ -3,10 +3,9 @@
 # Automatic detection and counting of grape bunches by robots
 
 <p align="center">
-  <img src="https://github.com/XuminGaoGithub/Grape_bunches_count_using_robots/blob/master/catkin_ws/Demo_grape_bunches_count.gif" alt="Demo" />
+  <img src="https://github.com/XuminGaoGithub/Grape_bunches_count_using_robots/blob/master/catkin_ws/Demo_grape_bunches_count.gif" width="1500" alt="Demo" />
 </p>
-
-
+                                                              
 
 ## Solution
 My focus area is **Perception**. In this task, the robot can **accurately count all grape bunches in the vineyard and obtain the 3D spatial coordinates of all grape bunches**. Firstly, the robot uses **yolov3** to detect grape bunches, which can effectively solve the detection of multiple targets with partially overlapping regions in the image. Then calculating euclidean distance to **track** center of targets from different camera frames when robot is moving. After that, according to the target's center coordinates on color image and the corresponding depth distance on depth image, calculating target's **3D position** in world coordinate frame by using TF tree in ROS. Meanwhile, using **spatial qualified method** to filter out target's location noises. Finally, the robot can complete the counting task and publish the 3D poses of all grape bunches to the rviz interface. For the navigation, the robot realizes **autonomous navigation** around the grape trellis using the pre-established topology map and movebase package in ROS. **The github page** can be found https://github.com/XuminGaoGithub/Grape_bunches_count_using_robots.
