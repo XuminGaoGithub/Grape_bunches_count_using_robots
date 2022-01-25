@@ -18,7 +18,7 @@ My focus area is **Perception**. In this task, the robot can **accurately count 
 
 **2.** This work is based on https://github.com/LCAS/CMP9767M. Clone it into your catkin_ws workspace.  
 
-**3.** Ensure your system has installed cuda_10.1/cuda_11.5 and cudnn_7.6.5 which can run Yolov3. If you use other versoins of cuda and cudnn, please follow the instruction https://github.com/leggedrobotics/darknet_ros to compile the darknet_ros package.
+**3.** Ensure your system has installed cuda_11.5 and cudnn_7.6.5 which can run Yolov3. If you use other versoins of cuda and cudnn, please follow the instruction https://github.com/leggedrobotics/darknet_ros to compile the darknet_ros package.
 
 **4.** Ensure your system has installed opencv_4.1.0 
 
