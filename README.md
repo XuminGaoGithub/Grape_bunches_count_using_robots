@@ -27,7 +27,7 @@ My focus area is **Perception**. In this task, the robot can **accurately count 
 ## Installation and Run
 
 **1. Clone repo and recompile**   
-Clone my repository into your workspace and recompile it:  
+**Clone** my repository into your workspace. And recompile it:  
 `cd catkin_ws/`  
 `catkin_make`  
 `~/catkin_ws/devel/setup.bash`  
@@ -38,7 +38,7 @@ Before you recompile, please **empty ./catkin_ws/build folder**.
 
 **Noting:**
 
-* If you cann't find the weights model which was trained to detect grape bunches in the directory (./catkin_ws/src/darknet_ros/darknet_ros/yolo_network_config/weights/), it may need to download it from the following link: 
+* If you cann't find the weights model (which was trained to detect grape bunches using Yolov3) in the directory (./catkin_ws/src/darknet_ros/darknet_ros/yolo_network_config/weights/), it may need to download it from the following link: 
 
   https://github.com/XuminGaoGithub/Grape_bunches_count_using_robots/blob/master/catkin_ws/src/darknet_ros/darknet_ros/yolo_network_config/weights/my_yolov3_14000.weights
  
@@ -122,7 +122,7 @@ After runing all of above commands, you can do **add->By topic->MarkerArray** in
 
  **2) Another way**
 
-There is a quick way to run above all of commands (If this is first time to run, you have to use **1)** to load map into mongodb), at first:      
+There is a quick way to run above all of commands (If this is first time to run, you have to use 1) to load map into mongodb), at first:      
 `roslaunch grape_bunches_count run.launch`  
 
  ***Waiting for gazebo simulatation is ready and start up it***, then  
