@@ -38,7 +38,7 @@ Before you recompile, please **empty ./catkin_ws/build folder**.
 
 **Noting:**
 
-* If you cann't find the weights model (which was trained to detect grape bunches using Yolov3) in the directory (./catkin_ws/src/darknet_ros/darknet_ros/yolo_network_config/weights/), it may need to download it from the following link: 
+* If you cann't find the weights model (which was trained to detect grape bunches using Yolov3) in the directory (./catkin_ws/src/darknet_ros/darknet_ros/yolo_network_config/weights/), you need to download it from the following link: 
 
   https://github.com/XuminGaoGithub/Grape_bunches_count_using_robots/blob/master/catkin_ws/src/darknet_ros/darknet_ros/yolo_network_config/weights/my_yolov3_14000.weights
  
