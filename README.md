@@ -1,7 +1,9 @@
-# CMP9767M - Automatic detection and counting of grape bunches by robots
+# CMP9767M  
+
+# Automatic detection and counting of grape bunches by robots
 
 <p align="center">
-  <img src="https://github.com/XuminGaoGithub/Grape_bunches_count_using_robots/blob/master/catkin_ws/Demo_grape_bunches_count.gif" width="1500" alt="Demo" />
+  <img src="https://github.com/XuminGaoGithub/Grape_bunches_count_using_robots/blob/master/catkin_ws/Demo_grape_bunches_count.gif" alt="Demo" />
 </p>
 
 
@@ -33,15 +35,14 @@ Clone my repository into your workspace and recompile it:
 
 Meanwhile, please follow the instruction https://github.com/leggedrobotics/darknet_ros , if you encounter some compilation problems in the part of darknet_ros. Also, this tutorial (https://github.com/LCAS/CMP9767M/wiki/Workshop-4---Robot-Vision) will be helpful for establishing darknet_ros.
 
-Before you recompile, please empty ./catkin_ws/build folder.  
+Before you recompile, please **empty ./catkin_ws/build folder**.  
 
-**Noting**
+**Noting:**
 
 * If you cann't find the weights model which was trained to detect grape bunches in the directory (./catkin_ws/src/darknet_ros/darknet_ros/yolo_network_config/weights/), it may need to download it from the following link: 
 
   https://github.com/XuminGaoGithub/Grape_bunches_count_using_robots/blob/master/catkin_ws/src/darknet_ros/darknet_ros/yolo_network_config/weights/my_yolov3_14000.weights
-
-  
+ 
 
 * The link of training dataset as below:
 
@@ -101,7 +102,8 @@ Launch gazebo simulation environment:
 Launch topology_navigation node:    
 `roslaunch uol_cmp9767m_tutorial topo_nav.launch`  
 Load map into mongodb(only once):  
-`rosrun topological_utils load_yaml_map.py $(rospack find grape_bunches_count)/maps/map.yaml`  Launch topology_navigation rviz:  
+`rosrun topological_utils load_yaml_map.py $(rospack find grape_bunches_count)/maps/map.yaml`  
+Launch topology_navigation rviz:  
 `rviz -d $(rospack find uol_cmp9767m_tutorial)/config/topo_nav.rviz`  
 Launch darknet_ros:    
 `roslaunch darknet_ros yolo_v3.launch`    
@@ -147,4 +149,4 @@ Don't forget to source your environment
 
 ## Contact
 
-Xumin Gao (478377515@qq.com)
+Xumin Gao (https://github.com/XuminGaoGithub/Grape_bunches_count_using_robots)
