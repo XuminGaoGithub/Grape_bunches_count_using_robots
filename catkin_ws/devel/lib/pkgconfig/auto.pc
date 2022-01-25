@@ -1,0 +1,8 @@
+prefix=/home/xumin/catkin_ws/devel
+
+Name: auto
+Description: Description of auto
+Version: 0.0.0
+Cflags: -I/home/xumin/catkin_ws/src/3DSemanticMapping_JINT_2020-master/auto/include
+Libs: -L${prefix}/lib -lprojector
+Requires: 

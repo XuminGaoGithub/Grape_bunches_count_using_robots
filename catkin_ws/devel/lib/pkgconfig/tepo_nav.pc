@@ -1,0 +1,8 @@
+prefix=/home/xumin/catkin_ws/devel
+
+Name: tepo_nav
+Description: Description of tepo_nav
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

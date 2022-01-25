@@ -1,0 +1,8 @@
+prefix=/home/xumin/catkin_ws/devel
+
+Name: image_denoising
+Description: Description of image_denoising
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

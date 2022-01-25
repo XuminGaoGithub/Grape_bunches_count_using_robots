@@ -1,0 +1,8 @@
+prefix=/home/xumin/catkin_ws/devel
+
+Name: my_opencv_test
+Description: Description of my_opencv_test
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,2 @@
+/home/xumin/catkin_ws/src/darknet_ros/darknet/test/dog.jpg
+/home/xumin/catkin_ws/src/darknet_ros/darknet/test/person.jpg

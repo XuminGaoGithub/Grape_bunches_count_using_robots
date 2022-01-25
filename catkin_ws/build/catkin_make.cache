@@ -1,0 +1,2 @@
+CMP9767M-master/uol_cmp9767m_base:CMP9767M-master/uol_cmp9767m_tutorial:darknet_ros/darknet_ros:darknet_ros/darknet_ros_msgs:grape_bunches_count
+-DCATKIN_WHITELIST_PACKAGES= -DCATKIN_DEVEL_PREFIX=/home/xumin/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/xumin/catkin_ws/install -G Unix Makefiles

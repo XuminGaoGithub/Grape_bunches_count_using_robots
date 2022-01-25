@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <node type="rviz" name="topo" pkg="rviz" args="rviz -d $(find uol_cmp9767m_tutorial)/config/topo_nav.rviz"/>
+  <node pkg="grape_bunches_count" type="navigation.py" name="navigation"/>
+
+</launch>

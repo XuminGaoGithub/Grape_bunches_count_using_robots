@@ -1,0 +1,19 @@
+<annotation>
+  <folder>VOC2007</folder>
+  <filename>000161_2.jpg</filename>
+  <size>
+    <width>840</width>
+    <height>698</height>
+    <depth>3</depth>
+  </size>
+  <object>
+    <name>grape</name>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>176.64203627011608</xmin>
+      <ymin>115.1996739012736</ymin>
+      <xmax>317.6420362701161</xmax>
+      <ymax>351.1996739012736</ymax>
+    </bndbox>
+  </object>
+</annotation>

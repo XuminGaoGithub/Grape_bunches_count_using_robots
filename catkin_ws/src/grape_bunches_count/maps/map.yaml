@@ -1,0 +1,436 @@
+- meta:
+    map: test
+    node: StartPoint
+    pointset: test
+  node:
+    edges:
+    - action: move_base
+      edge_id: StartPoint-DetectionPoint_0
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: DetectionPoint_0
+      recovery_behaviours_config: ''
+      top_vel: 0.5
+    localise_by_topic: ''
+    map: test
+    name: StartPoint
+    pointset: test
+    pose:
+      orientation:
+        w: 1
+        x: 0
+        y: 0
+        z: 0     
+      position:
+        x: -11.0
+        y: 0
+        z: 0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.1
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: test
+    node: DetectionPoint_0
+    pointset: test
+  node:
+    edges:
+    - action: move_base
+      edge_id: DetectionPoint_0-DetectionPoint_1
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: DetectionPoint_1
+      recovery_behaviours_config: ''
+      top_vel: 0.5
+    localise_by_topic: ''
+    map: test
+    name: DetectionPoint_0
+    pointset: test
+    pose:
+      orientation:
+        w: 1
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: -6.0
+        y: -4.2
+        z: 0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.1
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: test
+    node: DetectionPoint_1
+    pointset: test
+  node:
+    edges:
+    - action: move_base
+      edge_id: DetectionPoint_1-DetectionPoint_2
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: DetectionPoint_2
+      recovery_behaviours_config: ''
+      top_vel: 0.5
+    localise_by_topic: ''
+    map: test
+    name: DetectionPoint_1
+    pointset: test
+    pose:
+      orientation:
+        w: 0.7
+        x: 0
+        y: 0
+        z: -0.7
+      position:
+        x: -6.0
+        y: -4.2
+        z: 0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.1
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: test
+    node: DetectionPoint_2
+    pointset: test
+  node:
+    edges:
+    - action: move_base
+      edge_id: DetectionPoint_2-MiddlePoint
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: MiddlePoint
+      recovery_behaviours_config: ''
+      top_vel: 0.5
+    localise_by_topic: ''
+    map: test
+    name: DetectionPoint_2
+    pointset: test
+    pose:
+      orientation:
+        w: 0
+        x: 0
+        y: 0
+        z: 1
+      position:
+        x: -6.0
+        y: -4.2
+        z: 0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.1
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: test
+    node: MiddlePoint
+    pointset: test
+  node:
+    edges:
+    - action: move_base
+      edge_id: MiddlePoint-DetectionPoint_2
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: DetectionPoint_2
+      recovery_behaviours_config: ''
+      top_vel: 0.5
+    - action: move_base
+      edge_id: MiddlePoint-TurningPoint
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: TurningPoint
+      recovery_behaviours_config: ''
+      top_vel: 0.5
+    - action: move_base
+      edge_id: MiddlePoint-StartPoint
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: StartPoint
+      recovery_behaviours_config: ''
+      top_vel: 0.5
+    localise_by_topic: ''
+    map: test
+    name: MiddlePoint
+    pointset: test
+    pose:
+      orientation:
+        w: 0.7
+        x: 0
+        y: 0
+        z: -0.7
+      position:
+        x: -11.0
+        y: -7.63
+        z: 0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.1
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: test
+    node: TurningPoint
+    pointset: test
+  node:
+    edges:
+    - action: move_base
+      edge_id: TurningPoint-DetectionPoint_3
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: DetectionPoint_3
+      recovery_behaviours_config: ''
+      top_vel: 0.5
+    - action: move_base
+      edge_id: TurningPoint-MiddlePoint
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: MiddlePoint
+      recovery_behaviours_config: ''
+      top_vel: 0.5
+    localise_by_topic: ''
+    map: test
+    name: TurningPoint
+    pointset: test
+    pose:
+      orientation:
+        w: 0.7
+        x: 0
+        y: 0
+        z: -0.7
+      position:
+        x: -6.29
+        y: -10.68
+        z: 0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.03
+    yaw_goal_tolerance: 0.02
+- meta:
+    map: test
+    node: DetectionPoint_3
+    pointset: test
+  node:
+    edges:
+    - action: move_base
+      edge_id: DetectionPoint_3-DetectionPoint_4
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: DetectionPoint_4
+      recovery_behaviours_config: ''
+      top_vel: 0.5
+    localise_by_topic: ''
+    map: test
+    name: DetectionPoint_3
+    pointset: test
+    pose:
+      orientation:
+        w: 1
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: -6.29
+        y: -10.68
+        z: 0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.03
+    yaw_goal_tolerance: 0.02
+- meta:
+    map: test
+    node: DetectionPoint_4
+    pointset: test
+  node:
+    edges:
+    - action: move_base
+      edge_id: DetectionPoint_4-DetectionPoint_5
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: DetectionPoint_5
+      recovery_behaviours_config: ''
+      top_vel: 0.5
+    localise_by_topic: ''
+    map: test
+    name: DetectionPoint_4
+    pointset: test
+    pose:
+      orientation:
+        w: 0.7
+        x: 0
+        y: 0
+        z: 0.7
+      position:
+        x: -6.29
+        y: -10.68
+        z: 0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.1
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: test
+    node: DetectionPoint_5
+    pointset: test
+  node:
+    edges:
+    - action: move_base
+      edge_id: DetectionPoint_5-MiddlePoint
+      inflation_radius: 0.0
+      map_2d: cropped
+      node: MiddlePoint
+      recovery_behaviours_config: ''
+      top_vel: 0.5
+    localise_by_topic: ''
+    map: test
+    name: DetectionPoint_5
+    pointset: test
+    pose:
+      orientation:
+        w: 0
+        x: 0
+        y: 0
+        z: 1
+      position:
+        x: -6.29
+        y: -10.68
+        z: 0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.1
+    yaw_goal_tolerance: 0.1
+

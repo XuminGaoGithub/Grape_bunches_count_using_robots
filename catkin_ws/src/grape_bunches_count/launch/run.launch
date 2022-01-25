@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <include file="$(find bacchus_gazebo)/launch/vineyard_demo.launch">
+    <arg name="world_name" value="vineyard_small"/>
+  </include>
+
+  <include file="$(find uol_cmp9767m_tutorial)/launch/topo_nav.launch"/>
+  <include file="$(find darknet_ros)/launch/yolo_v3.launch"/>
+  <node pkg="grape_bunches_count" type="simple_depth_register_node.py" name="registration"/>
+  <node pkg="grape_bunches_count" type="detection_count.py" name="detection_count"/>
+  <node pkg="rqt_image_view" type="rqt_image_view" name="image_view_detection_image" args="/thorvald_001/kinect2_front_camera/hd/detection_image"/>
+  <node pkg="rqt_image_view" type="rqt_image_view" name="image_view_tracking_image" args="/thorvald_001/kinect2_front_camera/hd/tracking_image"/>
+  <node pkg="rqt_image_view" type="rqt_image_view" name="image_view_registered_depthImage_showTargets" args="/thorvald_001/kinect2_front_sensor/sd/registered_depthImage_showTargets"/>
+
+</launch>

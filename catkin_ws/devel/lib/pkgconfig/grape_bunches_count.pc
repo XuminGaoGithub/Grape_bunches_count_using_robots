@@ -1,0 +1,8 @@
+prefix=/home/xumin/catkin_ws/devel
+
+Name: grape_bunches_count
+Description: Description of grape_bunches_count
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

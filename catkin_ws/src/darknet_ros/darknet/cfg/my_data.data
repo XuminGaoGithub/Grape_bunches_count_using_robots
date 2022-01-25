@@ -1,0 +1,6 @@
+classes= 1
+train  = /home/xumin/catkin_ws/src/darknet_ros/darknet/data/train.txt
+valid  = /home/xumin/catkin_ws/src/darknet_ros/darknet/data/2007_test.txt
+names = /home/xumin/catkin_ws/src/darknet_ros/darknet/data/my_data.names
+backup = /home/xumin/catkin_ws/src/darknet_ros/darknet/result/
+
