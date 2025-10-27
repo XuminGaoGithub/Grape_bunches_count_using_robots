@@ -1,6 +1,6 @@
 # CMP9767M  
 
-# Automatic detection and counting of grape bunches by robots
+# The source code provided here implements the methods described in the paper "Automatic Detection, Positioning and Counting of Grape Bunches Using Robots"
 
 <p align="center">
   <img src="https://github.com/XuminGaoGithub/Grape_bunches_count_using_robots/blob/master/catkin_ws/Demo_grape_bunches_count.gif" width="1500" alt="Demo" />
